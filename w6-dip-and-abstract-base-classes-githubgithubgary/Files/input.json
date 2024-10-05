@@ -1,0 +1,60 @@
+﻿[
+    {
+        "$type": "W6_assignment_template.Models.Player",
+        "Name": "Brave Sir Robin",
+        "Type": "Fighter",
+        "Level": 1,
+        "HP": 10,
+        "Equipment": "sword|shield|potion",
+        "Gold": 50
+    },
+    {
+        "$type": "W6_assignment_template.Models.Player",
+        "Name": "Not so Brave Sir Robin",
+        "Type": "Fighter",
+        "Level": 1,
+        "HP": 10,
+        "Equipment": "broad sword|shield|potion",
+        "Gold": 50
+    },
+    {
+        "$type": "W6_assignment_template.Models.Goblin",
+        "Name": "Bob Goblin",
+        "Type": "Goblin",
+        "Level": 1,
+        "HP": 5,
+        "Treasure": "club"
+    },
+    {
+        "$type": "W6_assignment_template.Models.Goblin",
+        "Name": "Tom Goblin",
+        "Type": "Goblin",
+        "Level": 1,
+        "HP": 5,
+        "Treasure": null
+    },
+    {
+        "$type": "W6_assignment_template.Models.Goblin",
+        "Name": "Boss Goblin",
+        "Type": "Goblin",
+        "Level": 1,
+        "HP": 10,
+        "Treasure": "leather armor"
+    },
+    {
+        "$type": "W6_assignment_template.Models.Ghost",
+        "Name": "Silent Ghost",
+        "Type": "Ghost",
+        "Level": 2,
+        "HP": 8,
+        "Treasure": "cloak"
+    },
+    {
+        "$type": "W6_assignment_template.Models.Ghost",
+        "Name": "Scary Ghost",
+        "Type": "Ghost",
+        "Level": 2,
+        "HP": 8,
+        "Treasure": null
+    }
+]

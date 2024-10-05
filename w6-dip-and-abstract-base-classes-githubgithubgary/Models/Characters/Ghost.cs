@@ -1,0 +1,54 @@
+﻿using static Crayon.Output;
+using W6_assignment_template.Interfaces;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace W6_assignment_template.Models.Characters
+{
+    public class Ghost : CharacterBase, IFlyable
+    {
+        public string? Treasure { get; set; }
+
+        public Ghost(string name, string type, int level, int hp, string treasure)
+            : base(name, type, level, hp)
+        {
+            if (treasure != null)
+             {
+                Treasure = treasure;
+            }
+        }
+
+        public void Fly()
+        {
+            Console.WriteLine($"{Name} flies rapidly through the air.");
+        }
+
+        public override void UniqueBehavior()
+        {
+            throw new NotImplementedException();
+        }
+        public string PrintTreasure()
+        {
+            return $"{Treasure}";
+        }
+        public string PrintTreasure(string? delimiter)
+        {
+            string? treasure = null;
+            if (Treasure != null)
+            {
+                treasure = Treasure.Replace("|", delimiter);
+            }
+            else
+            {
+                treasure = string.Empty;
+            }
+            return $"{treasure}";
+        }
+        public override string Print()
+        {
+            string text = "Treasure";
+            string text2 = PrintTreasure(",");
+            string msg = $"{Bold().Magenta().Text(Name)} the {Bold().Cyan().Text(Type)} is at level {Bold().Rgb(255, 165, 0).Text(Level.ToString())} with {HP} hitpoints and the the following {text}: {Bold().Green().Text(text2)}";
+            return msg;
+        }
+    }
+}
